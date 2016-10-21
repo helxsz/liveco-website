@@ -1,0 +1,46 @@
+{{!< default}}
+
+
+{{> "section/company/company-team"}}
+
+
+
+<style>
+.section-gallery {
+margin: 0;
+position: relative; 
+height: 370px;
+overflow: hidden;
+}
+
+.section-gallery .parallax-background {
+position: relative;
+z-index: 1;
+width: 100%;
+height: 100%;
+}
+
+.section-gallery .parallax-background img {
+width: 100%;
+height: auto;
+position: relative;
+}
+</style>
+<div class="section section-gallery //http://www.creative-tim.com/" >
+        <div class="parallax-background">
+            <img alt="Gallery" src="http://www.creative-tim.com/assets/gallery-3e91e283e4d67c1be54d9e62468bd568.jpg" style="top: -101px;">
+        </div>
+  
+</div>
+
+
+
+<script>
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
+</script>
